@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="icon" type="image/x-icon" href="images/2.png">
+  <title>Bowling</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- to set the initial zoom level to be 1.0-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--for font montserrat-->
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body onload="bowl()">
+	
+  <div class="main-container">
+<h2><span id="Usernameplaying"></span>Opponent Need</h2>
+    <div id="ts"><h2 id="totalscore">0</h2></div>
+
+  	 <div id="comments">
+  </div>
+  <h4 id="tohide">Previous Ball<br><span id="compchoice"></span></h4>
+  	<div class="hands" id="winorloss">
+  		<img src = "images/1.png" alt="one" onclick="onebowl()" >
+  		<img src = "images/2.png" alt="two" onclick="twobowl()">
+  		<img src = "images/3.png" alt="three" onclick="threebowl()">
+  		<img src = "images/4.png" alt="four" onclick="fourbowl()">
+  		<img src = "images/5.png" alt="five" onclick="fivebowl()">
+  		<img src = "images/6.png" alt="six" onclick="sixbowl()">
+  	</div>
+    <h2 id="record">Opponent on Field</h2>
+  	<a class="btn btn-info" href="play.html" id="end">Start Again</a><br>
+        <a class="btn btn-info" href="index.html" id="end"><h3>Home</h3></a>
+</div>
+  <script type="text/javascript" src="play.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
